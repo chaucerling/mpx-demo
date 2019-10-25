@@ -1,0 +1,18 @@
+<template>
+  <mp-navigation-bar wx:if="{{__mpx_mode__ === 'wx'}}" loading="{{loading}}" show="{{show}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="Navigation" back="{{true}}"></mp-navigation-bar>
+  <view class="body">
+    <todoapp></todoapp>
+  </view>
+</template>
+
+<script lang="ts" src="./index.ts"></script>
+
+<script type="application/json">
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "mp-navigation-bar": "weui-miniprogram/miniprogram_dist/navigation-bar/navigation-bar",
+    "todoapp": "../../components/todoapp"
+  }
+}
+</script>

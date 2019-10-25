@@ -1,0 +1,52 @@
+<script lang="ts" src="./app.ts"></script>
+
+<style>
+
+</style>
+
+<script type="application/json">
+{
+  "pages": [
+    "./pages/index/index",
+    "./pages/my/index",
+    "./pages/schedule/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "首旅如家",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/tab-home.png",
+        "selectedIconPath": "./images/red-tab-home.png"
+      },
+      {
+        "pagePath": "pages/schedule/index",
+        "text": "行程",
+        "iconPath": "./images/tab-journey.png",
+        "selectedIconPath": "./images/red-tab-journey.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./images/tab-user.png",
+        "selectedIconPath": "./images/red-tab-user.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#EE2540"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位城市"
+    }
+  }
+}
+</script>
